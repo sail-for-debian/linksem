@@ -1,0 +1,12 @@
+--- a/src/no_ocamlbuild.mk
++++ b/src/no_ocamlbuild.mk
+@@ -48,7 +48,8 @@
+ 	mv $(patsubst %.ml,%.cmt,$(ML_SOURCES)) "$(dir $@)"
+ 	cp META.$* "$(dir $@)"/META
+ 
+-INSTALLDIR := $(shell ocamlfind printconf destdir)
++#INSTALLDIR := $(shell ocamlfind printconf destdir)
++INSTALLDIR := $(DESTDIR)
+ LINKSEMRELEASE := 0.8
+ LINKSEMVERSION := $(shell git describe --dirty --always || echo $(LINKSEMRELEASE))
+ 

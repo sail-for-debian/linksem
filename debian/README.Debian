@@ -1,0 +1,6 @@
+linksem for Debian
+
+1. Maybe split this package into two packages with binary tools
+2. Fix lintian warnings
+
+ -- Bo YU <tsu.yubo@gmail.com>  Sat, 24 Feb 2024 07:37:20 +0800

@@ -1,0 +1,4 @@
+# You must remove unused comment lines for the released package.
+0001-del-gitignore.patch
+0002-change-linksem-install-dir.patch
+0003-disable-check-lem.patch

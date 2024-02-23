@@ -1,0 +1,17 @@
+--- a/src/lem.mk
++++ b/src/lem.mk
+@@ -17,10 +17,11 @@
+ ifeq ($(shell ocamlfind query zarith),)
+ $(error No zarith installed [anywhere ocamlfind can find it]; install it (opam install zarith || apt-get install libzarith-ocaml{,-dev} || yum install ocaml-zarith), or use make install_dependencies in lem/ocaml-lib, or hack $(THIS_MAKEFILE) to use the Lem vendored copy locally.)
+ endif
++# Due to the lem Debian package issue, disable the check, will improve it in feature
+ # assume the host system has lem
+-ifeq ($(shell printenv | grep CAML 1>&2 && env OCAMLPATH=$(OCAMLPATH) ocamlfind query lem),)
+-$(error No lem installed [anywhere ocamlfind can find it]; please install it (opam install lem || 'make install' from lem/ocaml-lib || 'make local-install' from lem/ocaml-lib and add lem/ocaml-lib/local to OCAMLPATH))
+-endif
++#ifeq ($(shell printenv | grep CAML 1>&2 && env OCAMLPATH=$(OCAMLPATH) ocamlfind query lem),)
++#$(error No lem installed [anywhere ocamlfind can find it]; please install it (opam install lem || 'make install' from lem/ocaml-lib || 'make local-install' from lem/ocaml-lib and add lem/ocaml-lib/local to OCAMLPATH))
++#endif
+ endif
+ 
+ ifeq "$(USE_GENERIC_BYTE_SEQUENCE)" "true"

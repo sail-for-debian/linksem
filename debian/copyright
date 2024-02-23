@@ -1,0 +1,2080 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: linksem
+Upstream-Contact: <preferred name and address to reach the upstream project>
+Source: <url://example.com>
+#
+# Please double check copyright with the licensecheck(1) command.
+
+Files:     .gitignore
+           .hgignore
+           CONTRIBUTORS.md
+           Makefile
+           README.md
+           auto_generated/coq/abi_aarch64_le.v
+           auto_generated/coq/abi_aarch64_le_auxiliary.v
+           auto_generated/coq/abi_aarch64_le_elf_header.v
+           auto_generated/coq/abi_aarch64_le_elf_header_auxiliary.v
+           auto_generated/coq/abi_aarch64_le_serialisation.v
+           auto_generated/coq/abi_aarch64_le_serialisation_auxiliary.v
+           auto_generated/coq/abi_aarch64_program_header_table.v
+           auto_generated/coq/abi_aarch64_program_header_table_auxiliary.v
+           auto_generated/coq/abi_aarch64_relocation.v
+           auto_generated/coq/abi_aarch64_relocation_auxiliary.v
+           auto_generated/coq/abi_aarch64_section_header_table.v
+           auto_generated/coq/abi_aarch64_section_header_table_auxiliary.v
+           auto_generated/coq/abi_aarch64_symbol_table.v
+           auto_generated/coq/abi_aarch64_symbol_table_auxiliary.v
+           auto_generated/coq/abi_amd64.v
+           auto_generated/coq/abi_amd64_auxiliary.v
+           auto_generated/coq/abi_amd64_elf_header.v
+           auto_generated/coq/abi_amd64_elf_header_auxiliary.v
+           auto_generated/coq/abi_amd64_program_header_table.v
+           auto_generated/coq/abi_amd64_program_header_table_auxiliary.v
+           auto_generated/coq/abi_amd64_relocation.v
+           auto_generated/coq/abi_amd64_relocation_auxiliary.v
+           auto_generated/coq/abi_amd64_section_header_table.v
+           auto_generated/coq/abi_amd64_section_header_table_auxiliary.v
+           auto_generated/coq/abi_amd64_serialisation.v
+           auto_generated/coq/abi_amd64_serialisation_auxiliary.v
+           auto_generated/coq/abi_amd64_symbol_table.v
+           auto_generated/coq/abi_amd64_symbol_table_auxiliary.v
+           auto_generated/coq/abi_classes.v
+           auto_generated/coq/abi_classes_auxiliary.v
+           auto_generated/coq/abi_power64.v
+           auto_generated/coq/abi_power64_auxiliary.v
+           auto_generated/coq/abi_power64_dynamic.v
+           auto_generated/coq/abi_power64_dynamic_auxiliary.v
+           auto_generated/coq/abi_power64_elf_header.v
+           auto_generated/coq/abi_power64_elf_header_auxiliary.v
+           auto_generated/coq/abi_power64_relocation.v
+           auto_generated/coq/abi_power64_relocation_auxiliary.v
+           auto_generated/coq/abi_power64_section_header_table.v
+           auto_generated/coq/abi_power64_section_header_table_auxiliary.v
+           auto_generated/coq/abi_utilities.v
+           auto_generated/coq/abi_utilities_auxiliary.v
+           auto_generated/coq/abi_x86_relocation.v
+           auto_generated/coq/abi_x86_relocation_auxiliary.v
+           auto_generated/coq/abis.v
+           auto_generated/coq/abis_auxiliary.v
+           auto_generated/coq/abstract_linker_script.v
+           auto_generated/coq/abstract_linker_script_auxiliary.v
+           auto_generated/coq/archive.v
+           auto_generated/coq/archive_auxiliary.v
+           auto_generated/coq/byte_sequence.v
+           auto_generated/coq/byte_sequence_auxiliary.v
+           auto_generated/coq/command_line.v
+           auto_generated/coq/command_line_auxiliary.v
+           auto_generated/coq/default_printing.v
+           auto_generated/coq/default_printing_auxiliary.v
+           auto_generated/coq/elf64_file_of_elf_memory_image.v
+           auto_generated/coq/elf64_file_of_elf_memory_image_auxiliary.v
+           auto_generated/coq/elf_dynamic.v
+           auto_generated/coq/elf_dynamic_auxiliary.v
+           auto_generated/coq/elf_file.v
+           auto_generated/coq/elf_file_auxiliary.v
+           auto_generated/coq/elf_header.v
+           auto_generated/coq/elf_header_auxiliary.v
+           auto_generated/coq/elf_interpreted_section.v
+           auto_generated/coq/elf_interpreted_section_auxiliary.v
+           auto_generated/coq/elf_interpreted_segment.v
+           auto_generated/coq/elf_interpreted_segment_auxiliary.v
+           auto_generated/coq/elf_memory_image.v
+           auto_generated/coq/elf_memory_image_auxiliary.v
+           auto_generated/coq/elf_memory_image_of_elf64_file.v
+           auto_generated/coq/elf_memory_image_of_elf64_file_auxiliary.v
+           auto_generated/coq/elf_note.v
+           auto_generated/coq/elf_note_auxiliary.v
+           auto_generated/coq/elf_program_header_table.v
+           auto_generated/coq/elf_program_header_table_auxiliary.v
+           auto_generated/coq/elf_relocation.v
+           auto_generated/coq/elf_relocation_auxiliary.v
+           auto_generated/coq/elf_section_header_table.v
+           auto_generated/coq/elf_section_header_table_auxiliary.v
+           auto_generated/coq/elf_symbol_table.v
+           auto_generated/coq/elf_symbol_table_auxiliary.v
+           auto_generated/coq/elf_types_local.v
+           auto_generated/coq/elf_types_native_uint.v
+           auto_generated/coq/elf_types_native_uint_auxiliary.v
+           auto_generated/coq/endianness.v
+           auto_generated/coq/endianness_auxiliary.v
+           auto_generated/coq/error.v
+           auto_generated/coq/error_auxiliary.v
+           auto_generated/coq/gnu_ext_abi.v
+           auto_generated/coq/gnu_ext_abi_auxiliary.v
+           auto_generated/coq/gnu_ext_dynamic.v
+           auto_generated/coq/gnu_ext_dynamic_auxiliary.v
+           auto_generated/coq/gnu_ext_note.v
+           auto_generated/coq/gnu_ext_note_auxiliary.v
+           auto_generated/coq/gnu_ext_program_header_table.v
+           auto_generated/coq/gnu_ext_program_header_table_auxiliary.v
+           auto_generated/coq/gnu_ext_section_header_table.v
+           auto_generated/coq/gnu_ext_section_header_table_auxiliary.v
+           auto_generated/coq/gnu_ext_section_to_segment_mapping.v
+           auto_generated/coq/gnu_ext_section_to_segment_mapping_auxiliary.v
+           auto_generated/coq/gnu_ext_symbol_versioning.v
+           auto_generated/coq/gnu_ext_symbol_versioning_auxiliary.v
+           auto_generated/coq/gnu_ext_types_native_uint.v
+           auto_generated/coq/gnu_ext_types_native_uint_auxiliary.v
+           auto_generated/coq/harness_interface.v
+           auto_generated/coq/harness_interface_auxiliary.v
+           auto_generated/coq/hex_printing.v
+           auto_generated/coq/hex_printing_auxiliary.v
+           auto_generated/coq/import_everything.v
+           auto_generated/coq/import_everything_auxiliary.v
+           auto_generated/coq/input_list.v
+           auto_generated/coq/input_list_auxiliary.v
+           auto_generated/coq/link.v
+           auto_generated/coq/link_auxiliary.v
+           auto_generated/coq/linkable_list.v
+           auto_generated/coq/linkable_list_auxiliary.v
+           auto_generated/coq/linker_script.v
+           auto_generated/coq/linker_script_auxiliary.v
+           auto_generated/coq/memory_image.v
+           auto_generated/coq/memory_image_auxiliary.v
+           auto_generated/coq/memory_image_orderings.v
+           auto_generated/coq/memory_image_orderings_auxiliary.v
+           auto_generated/coq/missing_pervasives.v
+           auto_generated/coq/missing_pervasives_auxiliary.v
+           auto_generated/coq/multimap.v
+           auto_generated/coq/multimap_auxiliary.v
+           auto_generated/coq/sail_interface.v
+           auto_generated/coq/sail_interface_auxiliary.v
+           auto_generated/coq/show.v
+           auto_generated/coq/show_auxiliary.v
+           auto_generated/coq/string_table.v
+           auto_generated/coq/string_table_auxiliary.v
+           auto_generated/coq/test_image.v
+           auto_generated/coq/test_image_auxiliary.v
+           auto_generated/hol-kananaskis-10/Holmakefile
+           auto_generated/hol-kananaskis-10/abi_aarch64_leScript.sml
+           auto_generated/hol-kananaskis-10/abi_aarch64_leTheory.sml
+           auto_generated/hol-kananaskis-10/abi_aarch64_le_elf_headerScript.sml
+           auto_generated/hol-kananaskis-10/abi_aarch64_le_elf_headerTheory.sml
+           auto_generated/hol-kananaskis-10/abi_aarch64_le_serialisationScript.sml
+           auto_generated/hol-kananaskis-10/abi_aarch64_le_serialisationTheory.sml
+           auto_generated/hol-kananaskis-10/abi_aarch64_program_header_tableScript.sml
+           auto_generated/hol-kananaskis-10/abi_aarch64_program_header_tableTheory.sml
+           auto_generated/hol-kananaskis-10/abi_aarch64_relocationScript.sml
+           auto_generated/hol-kananaskis-10/abi_aarch64_relocationTheory.sml
+           auto_generated/hol-kananaskis-10/abi_aarch64_section_header_tableScript.sml
+           auto_generated/hol-kananaskis-10/abi_aarch64_section_header_tableTheory.sml
+           auto_generated/hol-kananaskis-10/abi_aarch64_symbol_tableScript.sml
+           auto_generated/hol-kananaskis-10/abi_aarch64_symbol_tableTheory.sml
+           auto_generated/hol-kananaskis-10/abi_amd64Script.sml
+           auto_generated/hol-kananaskis-10/abi_amd64Theory.sml
+           auto_generated/hol-kananaskis-10/abi_amd64_elf_headerScript.sml
+           auto_generated/hol-kananaskis-10/abi_amd64_elf_headerTheory.sml
+           auto_generated/hol-kananaskis-10/abi_amd64_program_header_tableScript.sml
+           auto_generated/hol-kananaskis-10/abi_amd64_program_header_tableTheory.sml
+           auto_generated/hol-kananaskis-10/abi_amd64_relocationScript.sml
+           auto_generated/hol-kananaskis-10/abi_amd64_relocationTheory.sml
+           auto_generated/hol-kananaskis-10/abi_amd64_section_header_tableScript.sml
+           auto_generated/hol-kananaskis-10/abi_amd64_section_header_tableTheory.sml
+           auto_generated/hol-kananaskis-10/abi_amd64_serialisationScript.sml
+           auto_generated/hol-kananaskis-10/abi_amd64_serialisationTheory.sml
+           auto_generated/hol-kananaskis-10/abi_amd64_symbol_tableScript.sml
+           auto_generated/hol-kananaskis-10/abi_amd64_symbol_tableTheory.sml
+           auto_generated/hol-kananaskis-10/abi_power64Script.sml
+           auto_generated/hol-kananaskis-10/abi_power64Theory.sml
+           auto_generated/hol-kananaskis-10/abi_power64_dynamicScript.sml
+           auto_generated/hol-kananaskis-10/abi_power64_dynamicTheory.sml
+           auto_generated/hol-kananaskis-10/abi_power64_elf_headerScript.sml
+           auto_generated/hol-kananaskis-10/abi_power64_elf_headerTheory.sml
+           auto_generated/hol-kananaskis-10/abi_power64_relocationScript.sml
+           auto_generated/hol-kananaskis-10/abi_power64_relocationTheory.sml
+           auto_generated/hol-kananaskis-10/abi_power64_section_header_tableScript.sml
+           auto_generated/hol-kananaskis-10/abi_power64_section_header_tableTheory.sml
+           auto_generated/hol-kananaskis-10/abi_utilitiesScript.sml
+           auto_generated/hol-kananaskis-10/abi_utilitiesTheory.sml
+           auto_generated/hol-kananaskis-10/abi_x86_relocationScript.sml
+           auto_generated/hol-kananaskis-10/abi_x86_relocationTheory.sml
+           auto_generated/hol-kananaskis-10/abisScript.sml
+           auto_generated/hol-kananaskis-10/abisTheory.sml
+           auto_generated/hol-kananaskis-10/abstract_linker_scriptScript.sml
+           auto_generated/hol-kananaskis-10/abstract_linker_scriptTheory.sml
+           auto_generated/hol-kananaskis-10/archiveAuxiliaryScript.sml
+           auto_generated/hol-kananaskis-10/archiveAuxiliaryTheory.sml
+           auto_generated/hol-kananaskis-10/archiveScript.sml
+           auto_generated/hol-kananaskis-10/archiveTheory.sml
+           auto_generated/hol-kananaskis-10/byte_sequenceAuxiliaryScript.sml
+           auto_generated/hol-kananaskis-10/byte_sequenceScript.sml
+           auto_generated/hol-kananaskis-10/byte_sequenceTheory.sml
+           auto_generated/hol-kananaskis-10/default_printingScript.sml
+           auto_generated/hol-kananaskis-10/default_printingTheory.sml
+           auto_generated/hol-kananaskis-10/elf_dynamicAuxiliaryScript.sml
+           auto_generated/hol-kananaskis-10/elf_dynamicScript.sml
+           auto_generated/hol-kananaskis-10/elf_dynamicTheory.sml
+           auto_generated/hol-kananaskis-10/elf_fileAuxiliaryScript.sml
+           auto_generated/hol-kananaskis-10/elf_fileScript.sml
+           auto_generated/hol-kananaskis-10/elf_fileTheory.sml
+           auto_generated/hol-kananaskis-10/elf_headerScript.sml
+           auto_generated/hol-kananaskis-10/elf_headerTheory.sml
+           auto_generated/hol-kananaskis-10/elf_interpreted_sectionScript.sml
+           auto_generated/hol-kananaskis-10/elf_interpreted_sectionTheory.sml
+           auto_generated/hol-kananaskis-10/elf_interpreted_segmentScript.sml
+           auto_generated/hol-kananaskis-10/elf_interpreted_segmentTheory.sml
+           auto_generated/hol-kananaskis-10/elf_localScript.sml
+           auto_generated/hol-kananaskis-10/elf_noteScript.sml
+           auto_generated/hol-kananaskis-10/elf_program_header_tableAuxiliaryScript.sml
+           auto_generated/hol-kananaskis-10/elf_program_header_tableScript.sml
+           auto_generated/hol-kananaskis-10/elf_program_header_tableTheory.sml
+           auto_generated/hol-kananaskis-10/elf_relocationAuxiliaryScript.sml
+           auto_generated/hol-kananaskis-10/elf_relocationScript.sml
+           auto_generated/hol-kananaskis-10/elf_relocationTheory.sml
+           auto_generated/hol-kananaskis-10/elf_section_header_tableAuxiliaryScript.sml
+           auto_generated/hol-kananaskis-10/elf_section_header_tableScript.sml
+           auto_generated/hol-kananaskis-10/elf_section_header_tableTheory.sml
+           auto_generated/hol-kananaskis-10/elf_symbol_tableAuxiliaryScript.sml
+           auto_generated/hol-kananaskis-10/elf_symbol_tableScript.sml
+           auto_generated/hol-kananaskis-10/elf_symbol_tableTheory.sml
+           auto_generated/hol-kananaskis-10/elf_types_native_uintScript.sml
+           auto_generated/hol-kananaskis-10/elf_types_native_uintTheory.sml
+           auto_generated/hol-kananaskis-10/endiannessScript.sml
+           auto_generated/hol-kananaskis-10/endiannessTheory.sml
+           auto_generated/hol-kananaskis-10/errorAuxiliaryScript.sml
+           auto_generated/hol-kananaskis-10/errorScript.sml
+           auto_generated/hol-kananaskis-10/errorTheory.sml
+           auto_generated/hol-kananaskis-10/gnu_ext_abiScript.sml
+           auto_generated/hol-kananaskis-10/gnu_ext_dynamicScript.sml
+           auto_generated/hol-kananaskis-10/gnu_ext_noteAuxiliaryScript.sml
+           auto_generated/hol-kananaskis-10/gnu_ext_noteScript.sml
+           auto_generated/hol-kananaskis-10/gnu_ext_program_header_tableScript.sml
+           auto_generated/hol-kananaskis-10/gnu_ext_section_header_tableScript.sml
+           auto_generated/hol-kananaskis-10/gnu_ext_section_to_segment_mappingScript.sml
+           auto_generated/hol-kananaskis-10/gnu_ext_symbol_versioningAuxiliaryScript.sml
+           auto_generated/hol-kananaskis-10/gnu_ext_symbol_versioningScript.sml
+           auto_generated/hol-kananaskis-10/gnu_ext_types_native_uintScript.sml
+           auto_generated/hol-kananaskis-10/harness_interfaceAuxiliaryScript.sml
+           auto_generated/hol-kananaskis-10/harness_interfaceScript.sml
+           auto_generated/hol-kananaskis-10/hex_printingScript.sml
+           auto_generated/hol-kananaskis-10/import_everythingScript.sml
+           auto_generated/hol-kananaskis-10/memory_imageAuxiliaryScript.sml
+           auto_generated/hol-kananaskis-10/memory_imageScript.sml
+           auto_generated/hol-kananaskis-10/memory_imageTheory.sml
+           auto_generated/hol-kananaskis-10/memory_image_orderingsScript.sml
+           auto_generated/hol-kananaskis-10/memory_image_orderingsTheory.sml
+           auto_generated/hol-kananaskis-10/missing_pervasivesAuxiliaryScript.sml
+           auto_generated/hol-kananaskis-10/missing_pervasivesScript.sml
+           auto_generated/hol-kananaskis-10/missing_pervasivesTheory.sml
+           auto_generated/hol-kananaskis-10/multimapAuxiliaryScript.sml
+           auto_generated/hol-kananaskis-10/multimapScript.sml
+           auto_generated/hol-kananaskis-10/multimapTheory.sml
+           auto_generated/hol-kananaskis-10/sail_interfaceScript.sml
+           auto_generated/hol-kananaskis-10/showScript.sml
+           auto_generated/hol-kananaskis-10/showTheory.sml
+           auto_generated/hol-kananaskis-10/string_tableScript.sml
+           auto_generated/hol-kananaskis-10/string_tableTheory.sml
+           auto_generated/isabelle/Abi_aarch64_le.thy
+           auto_generated/isabelle/Abi_aarch64_le_elf_header.thy
+           auto_generated/isabelle/Abi_aarch64_le_serialisation.thy
+           auto_generated/isabelle/Abi_aarch64_program_header_table.thy
+           auto_generated/isabelle/Abi_aarch64_relocation.thy
+           auto_generated/isabelle/Abi_aarch64_section_header_table.thy
+           auto_generated/isabelle/Abi_aarch64_symbol_table.thy
+           auto_generated/isabelle/Abi_amd64.thy
+           auto_generated/isabelle/Abi_amd64_elf_header.thy
+           auto_generated/isabelle/Abi_amd64_program_header_table.thy
+           auto_generated/isabelle/Abi_amd64_relocation.thy
+           auto_generated/isabelle/Abi_amd64_section_header_table.thy
+           auto_generated/isabelle/Abi_amd64_serialisation.thy
+           auto_generated/isabelle/Abi_amd64_symbol_table.thy
+           auto_generated/isabelle/Abi_classes.thy
+           auto_generated/isabelle/Abi_mips64.thy
+           auto_generated/isabelle/Abi_mips64_elf_header.thy
+           auto_generated/isabelle/Abi_mips64_program_header_table.thy
+           auto_generated/isabelle/Abi_mips64_section_header_table.thy
+           auto_generated/isabelle/Abi_mips64_serialisation.thy
+           auto_generated/isabelle/Abi_mips64_symbol_table.thy
+           auto_generated/isabelle/Abi_power64.thy
+           auto_generated/isabelle/Abi_power64_dynamic.thy
+           auto_generated/isabelle/Abi_power64_elf_header.thy
+           auto_generated/isabelle/Abi_power64_relocation.thy
+           auto_generated/isabelle/Abi_power64_section_header_table.thy
+           auto_generated/isabelle/Abi_utilities.thy
+           auto_generated/isabelle/Abi_x86_relocation.thy
+           auto_generated/isabelle/Abis.thy
+           auto_generated/isabelle/Abstract_linker_script.thy
+           auto_generated/isabelle/Archive.thy
+           auto_generated/isabelle/ArchiveAuxiliary.thy
+           auto_generated/isabelle/Byte_sequence.thy
+           auto_generated/isabelle/Byte_sequenceAuxiliary.thy
+           auto_generated/isabelle/Command_line.thy
+           auto_generated/isabelle/Command_lineAuxiliary.thy
+           auto_generated/isabelle/Default_printing.thy
+           auto_generated/isabelle/Elf64_file_of_elf_memory_image.thy
+           auto_generated/isabelle/Elf_Roundtrip_Proofs.thy
+           auto_generated/isabelle/Elf_Scratch.thy
+           auto_generated/isabelle/Elf_Types_Local.thy
+           auto_generated/isabelle/Elf_dynamic.thy
+           auto_generated/isabelle/Elf_dynamicAuxiliary.thy
+           auto_generated/isabelle/Elf_executable_fileAuxiliary.thy
+           auto_generated/isabelle/Elf_file.thy
+           auto_generated/isabelle/Elf_fileAuxiliary.thy
+           auto_generated/isabelle/Elf_header.thy
+           auto_generated/isabelle/Elf_interpreted_section.thy
+           auto_generated/isabelle/Elf_interpreted_segment.thy
+           auto_generated/isabelle/Elf_memory_image.thy
+           auto_generated/isabelle/Elf_memory_image_of_elf64_file.thy
+           auto_generated/isabelle/Elf_note.thy
+           auto_generated/isabelle/Elf_program_header_table.thy
+           auto_generated/isabelle/Elf_program_header_tableAuxiliary.thy
+           auto_generated/isabelle/Elf_relocation.thy
+           auto_generated/isabelle/Elf_relocationAuxiliary.thy
+           auto_generated/isabelle/Elf_section_header_table.thy
+           auto_generated/isabelle/Elf_section_header_tableAuxiliary.thy
+           auto_generated/isabelle/Elf_symbol_table.thy
+           auto_generated/isabelle/Elf_symbol_tableAuxiliary.thy
+           auto_generated/isabelle/Elf_types.thy
+           auto_generated/isabelle/Elf_types_native_uint.thy
+           auto_generated/isabelle/Endianness.thy
+           auto_generated/isabelle/Error.thy
+           auto_generated/isabelle/ErrorAuxiliary.thy
+           auto_generated/isabelle/Gnu_ext_abi.thy
+           auto_generated/isabelle/Gnu_ext_dynamic.thy
+           auto_generated/isabelle/Gnu_ext_note.thy
+           auto_generated/isabelle/Gnu_ext_noteAuxiliary.thy
+           auto_generated/isabelle/Gnu_ext_program_header_table.thy
+           auto_generated/isabelle/Gnu_ext_section_header_table.thy
+           auto_generated/isabelle/Gnu_ext_section_to_segment_mapping.thy
+           auto_generated/isabelle/Gnu_ext_symbol_versioning.thy
+           auto_generated/isabelle/Gnu_ext_symbol_versioningAuxiliary.thy
+           auto_generated/isabelle/Gnu_ext_types_native_uint.thy
+           auto_generated/isabelle/Harness_interface.thy
+           auto_generated/isabelle/Harness_interfaceAuxiliary.thy
+           auto_generated/isabelle/Hex_printing.thy
+           auto_generated/isabelle/Import_everything.thy
+           auto_generated/isabelle/Input_list.thy
+           auto_generated/isabelle/Link.thy
+           auto_generated/isabelle/LinkAuxiliary.thy
+           auto_generated/isabelle/Linkable_list.thy
+           auto_generated/isabelle/Linkable_listAuxiliary.thy
+           auto_generated/isabelle/Linker_scriptAuxiliary.thy
+           auto_generated/isabelle/Memory_image.thy
+           auto_generated/isabelle/Memory_imageAuxiliary.thy
+           auto_generated/isabelle/Memory_image_orderings.thy
+           auto_generated/isabelle/Missing_pervasives.thy
+           auto_generated/isabelle/Missing_pervasivesAuxiliary.thy
+           auto_generated/isabelle/Multimap.thy
+           auto_generated/isabelle/MultimapAuxiliary.thy
+           auto_generated/isabelle/Sail_interface.thy
+           auto_generated/isabelle/Show.thy
+           auto_generated/isabelle/String_table.thy
+           auto_generated/isabelle/Termination.thy
+           auto_generated/isabelle/Test_image.thy
+           auto_generated/isabelle/massage_isabelle_imports.sh
+           compiler_proof/src/IMPl/Common.thy
+           compiler_proof/src/IMPl/Common_IMPl_Decl_Body.thy
+           compiler_proof/src/IMPl/Common_IMPl_Definition.thy
+           compiler_proof/src/IMPl/Common_IMPl_Expression.thy
+           compiler_proof/src/IMPl/Common_IMPl_Statement.thy
+           compiler_proof/src/IMPl/Common_IMPl_Types.thy
+           compiler_proof/src/IMPl/IMPl_Semantics.thy
+           compiler_proof/src/IMPl/IMPl_Syntax.thy
+           compiler_proof/src/IMPl/IMPl_Typing.thy
+           compiler_proof/src/IMPl/Multimodule_IMPl_Linking.thy
+           compiler_proof/src/IMPl/Multimodule_IMPl_Syntax.thy
+           compiler_proof/src/IMPl/Multimodule_IMPl_Typing.thy
+           compiler_proof/src/Utility.thy
+           doc/annotated_spec/dynamic_introduction_files/contents.gif
+           doc/annotated_spec/dynamic_introduction_files/next.gif
+           doc/annotated_spec/dynamic_introduction_files/previous.gif
+           doc/annotated_spec/dynamic_introduction_files/warning.gif
+           doc/annotated_spec/dynamic_linking.html
+           doc/annotated_spec/dynamic_linking_files/contents.gif
+           doc/annotated_spec/dynamic_linking_files/init_example.gif
+           doc/annotated_spec/dynamic_linking_files/previous.gif
+           doc/annotated_spec/dynamic_linking_files/warning.gif
+           doc/annotated_spec/header.html
+           doc/annotated_spec/header_files/contents.gif
+           doc/annotated_spec/header_files/next.gif
+           doc/annotated_spec/header_files/previous.gif
+           doc/annotated_spec/header_files/warning.gif
+           doc/annotated_spec/introduction.html
+           doc/annotated_spec/introduction.html~
+           doc/annotated_spec/introduction_files/contents.gif
+           doc/annotated_spec/introduction_files/next.gif
+           doc/annotated_spec/introduction_files/warning.gif
+           doc/annotated_spec/program_header.html
+           doc/annotated_spec/program_header_files/contents.gif
+           doc/annotated_spec/program_header_files/next.gif
+           doc/annotated_spec/program_header_files/previous.gif
+           doc/annotated_spec/program_header_files/warning.gif
+           doc/annotated_spec/relocation_files/contents.gif
+           doc/annotated_spec/relocation_files/next.gif
+           doc/annotated_spec/relocation_files/previous.gif
+           doc/annotated_spec/relocation_files/warning.gif
+           doc/annotated_spec/sections.html
+           doc/annotated_spec/sections_files/contents.gif
+           doc/annotated_spec/sections_files/next.gif
+           doc/annotated_spec/sections_files/previous.gif
+           doc/annotated_spec/sections_files/warning.gif
+           doc/annotated_spec/string_table_files/contents.gif
+           doc/annotated_spec/string_table_files/next.gif
+           doc/annotated_spec/string_table_files/previous.gif
+           doc/annotated_spec/symbol_table.html
+           doc/annotated_spec/symbol_table_files/contents.gif
+           doc/annotated_spec/symbol_table_files/next.gif
+           doc/annotated_spec/symbol_table_files/previous.gif
+           doc/annotated_spec/symbol_table_files/warning.gif
+           doc/dwarf-2.0.0-index.pdf
+           doc/dwarf-2.0.0.pdf
+           doc/dwarf_1_1_0.pdf
+           doc/ld/Makefile
+           doc/ld/at-file.texi
+           doc/ld/bfdver.texi
+           doc/ld/linksem.texi
+           doc/relocation_components_survey.md
+           opam
+           papers/oopsla-elf-linking-2016/artefact/README.md
+           papers/oopsla-elf-linking-2016/artefact/linker/Makefile
+           papers/oopsla-elf-linking-2016/artefact/linker/contrib/Makefile
+           papers/oopsla-elf-linking-2016/artefact/linker/contrib/ocaml-uint-master.tar.gz
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/.gitignore
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/INSTALL.md
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/Makefile
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/Makefile-distrib
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/README.md
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/coq-lib/coq_makefile.in
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/coq-lib/coqharness.v
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/coq-lib/lem_string.v
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/Makefile
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/README.md
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/dep.pdf
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/style.css
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/lem-doc.pdf
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/lem-draft.pdf
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/lem-libs-pervasives-extra.txt
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/lem-libs-pervasives.txt
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/lem-libs.pdf
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/lem-manual.pdf
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/lem.pdf
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/lem-draft.pdf
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/manual/Makefile
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/manual/backend_coq.md
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/manual/backend_hol.md
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/manual/backend_html.md
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/manual/backend_isa.md
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/manual/backend_linking.md
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/manual/backend_ocaml.md
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/manual/backend_tex.md
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/manual/backends.md
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/manual/header.md
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/manual/installation.md
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/manual/introduction.md
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/manual/invocation.md
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/manual/language.md
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/manual/library.md
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/manual/my-pandoc-latex-template.latex
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/manual/own_lem_files.md
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/manual/refactoring.md
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/manual/typeclasses.md
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/style.css
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/etc/head_config
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/examples/0README
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/examples/cpp/0README
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/examples/cpp/cmm.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/examples/ocaml_light/0README
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/examples/ocaml_light/Makefile
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/examples/ocaml_light/caml_typedef.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/examples/ocaml_light/caml_typedef_reduction.ott
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/examples/ocaml_light/caml_typedef_syntax.ott
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/examples/ocaml_light/caml_typedef_typing.ott
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/examples/ppcmem-model/0README
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/examples/ppcmem-model/Makefile
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/examples/ppcmem-model/bitwiseCompatibility.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/examples/ppcmem-model/machineDefAxiomaticCore.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/examples/ppcmem-model/machineDefFreshIds.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/examples/ppcmem-model/machineDefInstructionSemantics.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/examples/ppcmem-model/machineDefStorageSubsystem.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/examples/ppcmem-model/machineDefSystem.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/examples/ppcmem-model/machineDefThreadSubsystem.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/examples/ppcmem-model/machineDefTypes.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/examples/ppcmem-model/machineDefUtils.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/examples/ppcmem-model/machineDefValue.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/hol-lib/Holmakefile
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/hol-lib/lemLib.sml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/hol-lib/lemScript.sml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/isabelle-lib/Lem.thy
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/isabelle-lib/LemExtraDefs.thy
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/isabelle-lib/ROOT
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/language/Makefile
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/language/lem.ott
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/language/lem.txt
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/Holmakefile
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/Makefile
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/assert_extra.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/basic_classes.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/bool.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/build_all.py
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/coq_constants
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/debug.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/either.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/explanation.markdown
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/function.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/function_extra.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/gen-isa-tests.sh
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/hol_constants
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/isabelle_constants
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/list.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/list_extra.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/map.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/map_extra.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/maybe.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/maybe_extra.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/num.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/num_extra.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/ocaml_constants
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/pervasives.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/pervasives_extra.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/relation.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/run-ocaml-tests.sh
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/set.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/set_extra.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/set_helpers.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/show.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/show_extra.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/sorting.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/string.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/string_extra.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/transform.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/tuple.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/library/word.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/manual/Makefile
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/manual/hevea-1.10.tar.gz
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/manual/lem-manual.mng
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/ocaml-lib/META
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/ocaml-lib/Makefile
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/ocaml-lib/big_int_impl.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/ocaml-lib/big_int_impl.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/ocaml-lib/bit.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/ocaml-lib/bit.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/ocaml-lib/dependencies/Makefile
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/ocaml-lib/dependencies/zarith-1.3.tgz
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/ocaml-lib/either.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/ocaml-lib/extract.mllib
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/ocaml-lib/lem.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/ocaml-lib/llist.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/ocaml-lib/llist.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/ocaml-lib/nat_big_num.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/ocaml-lib/nat_big_num.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/ocaml-lib/nat_num.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/ocaml-lib/nat_num.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/ocaml-lib/pmap.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/ocaml-lib/pmap.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/ocaml-lib/pset.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/ocaml-lib/pset.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/ocaml-lib/pset_using_lists.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/ocaml-lib/sum.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/ocaml-lib/vector.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/ocaml-lib/vector.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/ocaml-lib/xstring.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/ocaml-lib/xstring.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/readme-sources.txt
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/Makefile
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/Makefile-distrib
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/ast.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/ast_util.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/ast_util.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/backend.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/backend.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/backend_common.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/backend_common.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/convert_relations.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/coq_backend.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/coq_backend_utils.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/debug.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/def_trans.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/def_trans.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/default_values.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/external_constants.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/finite_map.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/ident.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/ident.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/initial_env.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/initial_env.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/lexer.mll
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/macro_expander.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/macro_expander.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/main.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/main.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/module_dependencies.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/module_dependencies.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/name.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/name.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/nvar.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/nvar.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/output.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/output.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/path.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/path.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/pattern_syntax.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/pattern_syntax.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/patterns.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/patterns.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/pcombinators.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/pcombinators.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/pp.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/pp.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/precedence.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/precedence.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/process_file.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/process_file.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/rename_top_level.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/rename_top_level.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/reporting.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/reporting.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/reporting_basic.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/reporting_basic.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/seplist.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/seplist.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/syntactic_tests.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/syntactic_tests.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/target.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/target.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/target_binding.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/target_binding.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/target_syntax.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/target_syntax.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/target_trans.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/target_trans.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/trans.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/trans.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/typecheck.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/typecheck.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/typecheck_ctxt.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/typecheck_ctxt.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/typed_ast.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/typed_ast.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/typed_ast_syntax.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/typed_ast_syntax.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/types.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/types.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/tyvar.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/tyvar.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/ulib/batReturn.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/ulib/batReturn.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/ulib/batText.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/ulib/batText.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/ulib/batUChar.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/ulib/batUChar.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/ulib/batUTF8.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/ulib/batUTF8.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/ulib/ulib.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/util.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/util.mli
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/Makefile
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/HolDoc.sig
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/HolDoc.sml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/IsaMakefile
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/Makefile
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/classes.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/classes2.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/classes3.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/coq_backend_skips.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/coq_exps_test.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/coq_test.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/coq_test.v
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/exps.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/hol_preload.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/holtest.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/indreln.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/indreln2.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/ints.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/isatests/ROOT.ML
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/isatests/document/root.tex
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/let_rec.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/op.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/pats-demo.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/pats.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/pats2.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/pats3.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/record_test.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/renames.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/sets.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/textests/Makefile
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/textests/out10.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/types.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/typing_problems.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/backends/warn.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/ident_backend/Makefile
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/ident_backend/add_comments.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/ident_backend/basic_defs.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/ident_backend/basic_exprs.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/ident_backend/basic_pats.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/ident_backend/basic_type.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/ident_backend/basic_typedefs.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/ident_backend/classes.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/ident_backend/do_notation.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/ident_backend/identifiers.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/ident_backend/test_script
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/r6031_holbugs
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/sed_script
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/test-tex-inc-wrapper.tex
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/type_errors/Makefile
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/type_errors/results_checked
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/type_errors/tester.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/type_errors/tests
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tests/val_spec.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/tex-lib/Makefile
+           papers/oopsla-elf-linking-2016/artefact/linker/src/Makefile
+           papers/oopsla-elf-linking-2016/artefact/linker/src/abis/aarch64/abi_aarch64_le.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/abis/aarch64/abi_aarch64_le_elf_header.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/abis/aarch64/abi_aarch64_le_serialisation.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/abis/aarch64/abi_aarch64_program_header_table.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/abis/aarch64/abi_aarch64_relocation.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/abis/aarch64/abi_aarch64_section_header_table.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/abis/aarch64/abi_aarch64_symbol_table.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/abis/abi_classes.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/abis/abi_utilities.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/abis/abis.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/abis/amd64/abi_amd64.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/abis/amd64/abi_amd64_elf_header.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/abis/amd64/abi_amd64_program_header_table.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/abis/amd64/abi_amd64_relocation.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/abis/amd64/abi_amd64_section_header_table.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/abis/amd64/abi_amd64_serialisation.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/abis/amd64/abi_amd64_symbol_table.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/abis/mips64/abi_mips64.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/abis/mips64/abi_mips64_elf_header.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/abis/mips64/abi_mips64_program_header_table.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/abis/mips64/abi_mips64_relocation.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/abis/mips64/abi_mips64_section_header_table.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/abis/mips64/abi_mips64_serialisation.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/abis/mips64/abi_mips64_symbol_table.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/abis/power64/abi_power64.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/abis/power64/abi_power64_dynamic.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/abis/power64/abi_power64_elf_header.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/abis/power64/abi_power64_relocation.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/abis/power64/abi_power64_section_header_table.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/abis/x86/abi_x86_relocation.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/abstract_linker_script.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/adaptors/harness_interface.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/adaptors/sail_interface.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/archive.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/byte_sequence.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/byte_sequence_wrapper.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/src/command_line.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/default_printing.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/elf64_file_of_elf_memory_image.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/elf_dynamic.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/elf_file.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/elf_header.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/elf_interpreted_section.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/elf_interpreted_segment.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/elf_memory_image.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/elf_memory_image_of_elf64_file.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/elf_note.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/elf_program_header_table.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/elf_relocation.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/elf_section_header_table.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/elf_symbol_table.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/elf_types_native_uint.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/endianness.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/error.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/error.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/src/gnu_extensions/gnu_ext_abi.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/gnu_extensions/gnu_ext_dynamic.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/gnu_extensions/gnu_ext_note.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/gnu_extensions/gnu_ext_program_header_table.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/gnu_extensions/gnu_ext_section_header_table.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/gnu_extensions/gnu_ext_section_to_segment_mapping.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/gnu_extensions/gnu_ext_symbol_versioning.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/gnu_extensions/gnu_ext_types_native_uint.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/hex_printing.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/import_everything.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/input_list.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/link.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/linkable_list.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/linker_script.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/main_elf.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/main_link.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/memory_image.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/memory_image_orderings.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/missing_pervasives.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/ml_bindings.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/src/multimap.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/scratch.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/show.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/string_table.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/test_image.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/uint32.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/uint32_wrapper.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/src/uint64.lem
+           papers/oopsla-elf-linking-2016/artefact/linker/src/uint64_wrapper.ml
+           papers/oopsla-elf-linking-2016/artefact/linker/test/hello-static-uClibc/GNUmakefile
+           papers/oopsla-elf-linking-2016/artefact/linker/test/hello-static-uClibc/Makefile
+           papers/oopsla-elf-linking-2016/artefact/linker/test/hello-static-uClibc/crt1.o
+           papers/oopsla-elf-linking-2016/artefact/linker/test/hello-static-uClibc/crtbeginT.o
+           papers/oopsla-elf-linking-2016/artefact/linker/test/hello-static-uClibc/crtend.o
+           papers/oopsla-elf-linking-2016/artefact/linker/test/hello-static-uClibc/crti.o
+           papers/oopsla-elf-linking-2016/artefact/linker/test/hello-static-uClibc/crtn.o
+           papers/oopsla-elf-linking-2016/artefact/linker/test/hello-static-uClibc/diff.sh
+           papers/oopsla-elf-linking-2016/artefact/linker/test/hello-static-uClibc/hello
+           papers/oopsla-elf-linking-2016/artefact/linker/test/hello-static-uClibc/hello.c
+           papers/oopsla-elf-linking-2016/artefact/linker/test/hello-static-uClibc/hello.cmd
+           papers/oopsla-elf-linking-2016/artefact/linker/test/hello-static-uClibc/hello.collect-cmd
+           papers/oopsla-elf-linking-2016/artefact/linker/test/hello-static-uClibc/hello.env
+           papers/oopsla-elf-linking-2016/artefact/linker/test/hello-static-uClibc/hello.map
+           papers/oopsla-elf-linking-2016/artefact/linker/test/hello-static-uClibc/hello.o
+           papers/oopsla-elf-linking-2016/artefact/linker/test/hello-static-uClibc/hello.repeat-cmd
+           papers/oopsla-elf-linking-2016/artefact/linker/test/hello-static-uClibc/hello.test-out
+           papers/oopsla-elf-linking-2016/artefact/linker/test/hello-static-uClibc/hello.with-relocs
+           papers/oopsla-elf-linking-2016/artefact/linker/test/hello-static-uClibc/libgcc.a
+           papers/oopsla-elf-linking-2016/artefact/linker/test/hello-static-uClibc/run.sh
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/GNUmakefile
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/Makefile
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/bfd-filter.sh
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/blocksort.o
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/bzip2.o
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/bzlib.o
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/compress.o
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/crctable.o
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/crt1.o
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/crtbeginT.o
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/crtend.o
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/crti.o
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/crtn.o
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/decompress.o
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/diff.sh
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/gold-filter.sh
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/huffman.o
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/libgcc.a
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/libgcc_eh.a
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/libm.a
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/randtable.o
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/run.sh
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/spec.c
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/spec.h
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/spec.o
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/specbzip2
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/specbzip2.cmd
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/specbzip2.collect-cmd
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/specbzip2.env
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/specbzip2.map
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/specbzip2.repeat-cmd
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/specbzip2.test-out
+           papers/oopsla-elf-linking-2016/artefact/linker/test/tiny-irelative/Makefile
+           papers/oopsla-elf-linking-2016/artefact/linker/test/tiny-irelative/file1.c
+           papers/oopsla-elf-linking-2016/artefact/linker/test/tiny-irelative/file1.o
+           papers/oopsla-elf-linking-2016/artefact/linker/test/tiny-irelative/file2.c
+           papers/oopsla-elf-linking-2016/artefact/linker/test/tiny-irelative/file2.o
+           papers/oopsla-elf-linking-2016/artefact/linker/test/tiny-irelative/run.sh
+           papers/oopsla-elf-linking-2016/artefact/linker/test/tiny-irelative/tiny
+           papers/oopsla-elf-linking-2016/artefact/linker/test/tiny-irelative/tiny.map
+           papers/oopsla-elf-linking-2016/artefact/linker/test/tiny-irelative/tiny.repeat-cmd
+           papers/oopsla-elf-linking-2016/artefact/linker/test/true-static-uClibc/GNUmakefile
+           papers/oopsla-elf-linking-2016/artefact/linker/test/true-static-uClibc/Makefile
+           papers/oopsla-elf-linking-2016/artefact/linker/test/true-static-uClibc/crt1.o
+           papers/oopsla-elf-linking-2016/artefact/linker/test/true-static-uClibc/crtbeginT.o
+           papers/oopsla-elf-linking-2016/artefact/linker/test/true-static-uClibc/crtend.o
+           papers/oopsla-elf-linking-2016/artefact/linker/test/true-static-uClibc/crti.o
+           papers/oopsla-elf-linking-2016/artefact/linker/test/true-static-uClibc/crtn.o
+           papers/oopsla-elf-linking-2016/artefact/linker/test/true-static-uClibc/diff.sh
+           papers/oopsla-elf-linking-2016/artefact/linker/test/true-static-uClibc/libgcc.a
+           papers/oopsla-elf-linking-2016/artefact/linker/test/true-static-uClibc/run.sh
+           papers/oopsla-elf-linking-2016/artefact/linker/test/true-static-uClibc/true
+           papers/oopsla-elf-linking-2016/artefact/linker/test/true-static-uClibc/true.bfd
+           papers/oopsla-elf-linking-2016/artefact/linker/test/true-static-uClibc/true.c
+           papers/oopsla-elf-linking-2016/artefact/linker/test/true-static-uClibc/true.cmd
+           papers/oopsla-elf-linking-2016/artefact/linker/test/true-static-uClibc/true.collect-cmd
+           papers/oopsla-elf-linking-2016/artefact/linker/test/true-static-uClibc/true.env
+           papers/oopsla-elf-linking-2016/artefact/linker/test/true-static-uClibc/true.gold.with-relocs
+           papers/oopsla-elf-linking-2016/artefact/linker/test/true-static-uClibc/true.map
+           papers/oopsla-elf-linking-2016/artefact/linker/test/true-static-uClibc/true.o
+           papers/oopsla-elf-linking-2016/artefact/linker/test/true-static-uClibc/true.repeat-cmd
+           papers/oopsla-elf-linking-2016/artefact/linker/test/true-static-uClibc/true.test-out
+           papers/oopsla-elf-linking-2016/artefact/linker/test/true-static-uClibc/true.with-relocs
+           papers/oopsla-elf-linking-2016/artefact/prf/ELF_Relocation_Proof.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/Termination.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Abi_aarch64_le.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Abi_aarch64_le_elf_header.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Abi_aarch64_le_serialisation.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Abi_aarch64_program_header_table.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Abi_aarch64_relocation.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Abi_aarch64_section_header_table.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Abi_aarch64_symbol_table.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Abi_amd64.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Abi_amd64_elf_header.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Abi_amd64_program_header_table.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Abi_amd64_relocation.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Abi_amd64_section_header_table.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Abi_amd64_serialisation.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Abi_amd64_symbol_table.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Abi_classes.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Abi_power64.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Abi_power64_dynamic.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Abi_power64_elf_header.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Abi_power64_relocation.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Abi_power64_section_header_table.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Abi_utilities.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Abi_x86_relocation.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Abis.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Abstract_linker_script.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Archive.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Byte_sequence.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Command_line.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Default_printing.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Elf64_file_of_elf_memory_image.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Elf_Roundtrip_Proofs.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Elf_Scratch.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Elf_Types_Local.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Elf_dynamic.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Elf_file.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Elf_header.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Elf_interpreted_section.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Elf_interpreted_segment.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Elf_memory_image.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Elf_memory_image_of_elf64_file.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Elf_note.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Elf_program_header_table.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Elf_relocation.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Elf_section_header_table.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Elf_symbol_table.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Elf_types.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Elf_types_native_uint.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Endianness.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Error.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Gnu_ext_abi.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Gnu_ext_dynamic.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Gnu_ext_note.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Gnu_ext_program_header_table.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Gnu_ext_section_header_table.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Gnu_ext_section_to_segment_mapping.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Gnu_ext_symbol_versioning.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Gnu_ext_types_native_uint.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Harness_interface.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Hex_printing.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Import_everything.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Input_list.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Link.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Linkable_list.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Memory_image.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Memory_image_orderings.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Missing_pervasives.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Multimap.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Sail_interface.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Show.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/String_table.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Test_image.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/lem-libs/isabelle-lib/Lem.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/lem-libs/isabelle-lib/LemExtraDefs.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/lem-libs/isabelle-lib/Lem_assert_extra.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/lem-libs/isabelle-lib/Lem_basic_classes.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/lem-libs/isabelle-lib/Lem_bool.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/lem-libs/isabelle-lib/Lem_either.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/lem-libs/isabelle-lib/Lem_function.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/lem-libs/isabelle-lib/Lem_function_extra.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/lem-libs/isabelle-lib/Lem_list.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/lem-libs/isabelle-lib/Lem_list_extra.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/lem-libs/isabelle-lib/Lem_map.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/lem-libs/isabelle-lib/Lem_map_extra.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/lem-libs/isabelle-lib/Lem_maybe.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/lem-libs/isabelle-lib/Lem_maybe_extra.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/lem-libs/isabelle-lib/Lem_num.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/lem-libs/isabelle-lib/Lem_num_extra.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/lem-libs/isabelle-lib/Lem_pervasives.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/lem-libs/isabelle-lib/Lem_pervasives_extra.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/lem-libs/isabelle-lib/Lem_relation.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/lem-libs/isabelle-lib/Lem_set.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/lem-libs/isabelle-lib/Lem_set_extra.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/lem-libs/isabelle-lib/Lem_set_helpers.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/lem-libs/isabelle-lib/Lem_show.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/lem-libs/isabelle-lib/Lem_show_extra.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/lem-libs/isabelle-lib/Lem_sorting.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/lem-libs/isabelle-lib/Lem_string.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/lem-libs/isabelle-lib/Lem_string_extra.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/lem-libs/isabelle-lib/Lem_tuple.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/lem-libs/isabelle-lib/Lem_word.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/x86_64_model/X64.thy
+           papers/oopsla-elf-linking-2016/oopsla-elf-linking-2016.pdf
+           prf/ELF_Relocation_Proof.thy
+           prf/x86-64_labelled_model/Labelled_X64.thy
+           prf/x86-64_labelled_model/RelocationProof.thy
+           prf/x86-64_labelled_model/X64.thy
+           prf/x86-64_model/X64.thy
+           src/META
+           src/META.num
+           src/META.zarith
+           src/Makefile
+           src/abis/aarch64/abi_aarch64_le.lem
+           src/abis/aarch64/abi_aarch64_le_elf_header.lem
+           src/abis/aarch64/abi_aarch64_le_serialisation.lem
+           src/abis/aarch64/abi_aarch64_program_header_table.lem
+           src/abis/aarch64/abi_aarch64_relocation.lem
+           src/abis/aarch64/abi_aarch64_section_header_table.lem
+           src/abis/aarch64/abi_aarch64_symbol_table.lem
+           src/abis/abi_classes.lem
+           src/abis/abi_utilities.lem
+           src/abis/abis.lem
+           src/abis/amd64/abi_amd64.lem
+           src/abis/amd64/abi_amd64_elf_header.lem
+           src/abis/amd64/abi_amd64_program_header_table.lem
+           src/abis/amd64/abi_amd64_relocation.lem
+           src/abis/amd64/abi_amd64_section_header_table.lem
+           src/abis/amd64/abi_amd64_serialisation.lem
+           src/abis/amd64/abi_amd64_symbol_table.lem
+           src/abis/cheri_mips64/abi_cheri_mips64.lem
+           src/abis/cheri_mips64/abi_cheri_mips64_capability.lem
+           src/abis/cheri_mips64/abi_cheri_mips64_dynamic.lem
+           src/abis/cheri_mips64/abi_cheri_mips64_elf_header.lem
+           src/abis/cheri_mips64/abi_cheri_mips64_relocation.lem
+           src/abis/mips64/abi_mips64.lem
+           src/abis/mips64/abi_mips64_dynamic.lem
+           src/abis/mips64/abi_mips64_elf_header.lem
+           src/abis/mips64/abi_mips64_program_header_table.lem
+           src/abis/mips64/abi_mips64_relocation.lem
+           src/abis/mips64/abi_mips64_section_header_table.lem
+           src/abis/mips64/abi_mips64_serialisation.lem
+           src/abis/mips64/abi_mips64_symbol_table.lem
+           src/abis/power64/abi_power64.lem
+           src/abis/power64/abi_power64_dynamic.lem
+           src/abis/power64/abi_power64_elf_header.lem
+           src/abis/power64/abi_power64_relocation.lem
+           src/abis/power64/abi_power64_section_header_table.lem
+           src/abis/riscv/abi_riscv.lem
+           src/abis/riscv/abi_riscv_elf_header.lem
+           src/abis/riscv/abi_riscv_program_header_table.lem
+           src/abis/riscv/abi_riscv_relocation.lem
+           src/abis/riscv/abi_riscv_section_header_table.lem
+           src/abis/riscv/abi_riscv_serialisation.lem
+           src/abis/riscv/abi_riscv_symbol_table.lem
+           src/abis/x86/abi_x86_relocation.lem
+           src/abstract_linker_script.lem
+           src/adaptors/harness_interface.lem
+           src/adaptors/sail_interface.lem
+           src/archive.lem
+           src/auxv.lem
+           src/byte_pattern.lem
+           src/byte_pattern_extra.lem
+           src/byte_sequence.lem
+           src/byte_sequence_generic.lem
+           src/byte_sequence_ocaml.lem
+           src/byte_sequence_wrapper.ml
+           src/command_line.lem
+           src/copy_elf.lem
+           src/default_printing.lem
+           src/dwarf.lem
+           src/dwarf_attributes_by_tag_value.lem
+           src/dwarf_ctypes.lem
+           src/elf64_file_of_elf_memory_image.lem
+           src/elf_dynamic.lem
+           src/elf_file.lem
+           src/elf_header.lem
+           src/elf_interpreted_section.lem
+           src/elf_interpreted_segment.lem
+           src/elf_memory_image.lem
+           src/elf_memory_image_of_elf64_file.lem
+           src/elf_note.lem
+           src/elf_program_header_table.lem
+           src/elf_relocation.lem
+           src/elf_section_header_table.lem
+           src/elf_symbol_table.lem
+           src/elf_types_native_uint.lem
+           src/endianness.lem
+           src/error.lem
+           src/filesystem.lem
+           src/filesystem_wrapper.ml
+           src/gnu_extensions/gnu_ext_abi.lem
+           src/gnu_extensions/gnu_ext_dynamic.lem
+           src/gnu_extensions/gnu_ext_note.lem
+           src/gnu_extensions/gnu_ext_program_header_table.lem
+           src/gnu_extensions/gnu_ext_section_header_table.lem
+           src/gnu_extensions/gnu_ext_section_to_segment_mapping.lem
+           src/gnu_extensions/gnu_ext_symbol_versioning.lem
+           src/gnu_extensions/gnu_ext_types_native_uint.lem
+           src/hex_printing.lem
+           src/import_everything.lem
+           src/input_list.lem
+           src/ldconfig.lem
+           src/ldgram.y.hacked
+           src/lem.mk
+           src/link.lem
+           src/linkable_list.lem
+           src/linker_script.lem
+           src/load.lem
+           src/main_elf.lem
+           src/main_link.lem
+           src/main_load.lem
+           src/memory_image.lem
+           src/memory_image_orderings.lem
+           src/missing_pervasives.lem
+           src/ml_bindings.ml
+           src/multimap.lem
+           src/no_ocamlbuild.mk
+           src/ocamlbuild.mk
+           src/scratch.lem
+           src/show.lem
+           src/src_lem_library/bit.ml
+           src/src_lem_library/bit.mli
+           src/src_lem_library/either.ml
+           src/src_lem_library/lem.ml
+           src/src_lem_library/lem_assert_extra.ml
+           src/src_lem_library/lem_basic_classes.ml
+           src/src_lem_library/lem_bool.ml
+           src/src_lem_library/lem_either.ml
+           src/src_lem_library/lem_function.ml
+           src/src_lem_library/lem_function_extra.ml
+           src/src_lem_library/lem_list.ml
+           src/src_lem_library/lem_list_extra.ml
+           src/src_lem_library/lem_map.ml
+           src/src_lem_library/lem_map_extra.ml
+           src/src_lem_library/lem_maybe.ml
+           src/src_lem_library/lem_maybe_extra.ml
+           src/src_lem_library/lem_num.ml
+           src/src_lem_library/lem_pervasives.ml
+           src/src_lem_library/lem_pervasives_extra.ml
+           src/src_lem_library/lem_relation.ml
+           src/src_lem_library/lem_set.ml
+           src/src_lem_library/lem_set_extra.ml
+           src/src_lem_library/lem_set_helpers.ml
+           src/src_lem_library/lem_sorting.ml
+           src/src_lem_library/lem_string.ml
+           src/src_lem_library/lem_string_extra.ml
+           src/src_lem_library/lem_tuple.ml
+           src/src_lem_library/lem_word.ml
+           src/src_lem_library/nat_big_num.ml
+           src/src_lem_library/nat_big_num.mli
+           src/src_lem_library/nat_num.ml
+           src/src_lem_library/nat_num.mli
+           src/src_lem_library/pmap.ml
+           src/src_lem_library/pmap.mli
+           src/src_lem_library/pset.ml
+           src/src_lem_library/pset.mli
+           src/src_lem_library/pset_using_lists.ml
+           src/src_lem_library/sum.ml
+           src/src_lem_library/vector.ml
+           src/src_lem_library/vector.mli
+           src/src_lem_library/xstring.ml
+           src/src_lem_library/xstring.mli
+           src/string_table.lem
+           src/test_image.lem
+           src/uint32_wrapper.ml
+           src/uint64_wrapper.ml
+           src/utility.ml
+           test/Makefile.gnu
+           test/bfd-filter.sh
+           test/diff.sh
+           test/gold-filter.sh
+           test/hello-static-glibc/crt1.o
+           test/hello-static-glibc/crtbeginT.o
+           test/hello-static-glibc/crtend.o
+           test/hello-static-glibc/crti.o
+           test/hello-static-glibc/crtn.o
+           test/hello-static-glibc/hello
+           test/hello-static-glibc/hello.c
+           test/hello-static-glibc/hello.cmd
+           test/hello-static-glibc/hello.collect-cmd
+           test/hello-static-glibc/hello.env
+           test/hello-static-glibc/hello.map
+           test/hello-static-glibc/hello.o
+           test/hello-static-glibc/hello.repeat-cmd
+           test/hello-static-glibc/libgcc_eh.a
+           test/hello-static-uClibc/GNUmakefile
+           test/hello-static-uClibc/crt1.o
+           test/hello-static-uClibc/crtbeginT.o
+           test/hello-static-uClibc/crtend.o
+           test/hello-static-uClibc/crti.o
+           test/hello-static-uClibc/crtn.o
+           test/hello-static-uClibc/hello
+           test/hello-static-uClibc/hello.c
+           test/hello-static-uClibc/hello.cmd
+           test/hello-static-uClibc/hello.collect-cmd
+           test/hello-static-uClibc/hello.env
+           test/hello-static-uClibc/hello.map
+           test/hello-static-uClibc/hello.o
+           test/hello-static-uClibc/hello.repeat-cmd
+           test/hello-static-uClibc/hello.test-out
+           test/hello-static-uClibc/hello.with-relocs
+           test/hello-static-uClibc/libgcc.a
+           test/hello/hello.c
+           test/link-01/Makefile
+           test/link-01/a.out
+           test/link-01/a.out.map
+           test/link-01/file1.c
+           test/link-01/file1.o
+           test/link-01/file2.c
+           test/link-01/file2.o
+           test/link-02/Makefile
+           test/link-02/a.out
+           test/link-02/file1.c
+           test/link-02/file1.o
+           test/link-02/file2.c
+           test/link-02/file2.o
+           test/link-02/file3.c
+           test/link-02/file3.o
+           test/magnus-donothing/magnus-donothing-test.s
+           test/mixed-binaries/1548
+           test/mixed-binaries/aarch64-executable-1
+           test/mixed-binaries/clamscan
+           test/mixed-binaries/dpkg
+           test/mixed-binaries/elf32-exec-test
+           test/mixed-binaries/gdalenhance
+           test/mixed-binaries/hello5
+           test/mixed-binaries/hello6-perf-100
+           test/mixed-binaries/mips64-test_raw_lui.elf
+           test/mixed-binaries/power64-executable-1
+           test/mixed-binaries/power64-executable-2
+           test/mixed-binaries/ppmcolormask
+           test/mixed-binaries/printf
+           test/mixed-binaries/ptftopl
+           test/mixed-binaries/tiny-istatic-with-malloc/tiny-tinystatic-with-malloc
+           test/mixed-binaries/y4mcolorbars
+           test/run.sh
+           test/specbzip2-static-uClibc/GNUmakefile
+           test/specbzip2-static-uClibc/blocksort.o
+           test/specbzip2-static-uClibc/bzip2.o
+           test/specbzip2-static-uClibc/bzlib.o
+           test/specbzip2-static-uClibc/compress.o
+           test/specbzip2-static-uClibc/crctable.o
+           test/specbzip2-static-uClibc/crt1.o
+           test/specbzip2-static-uClibc/crtbeginT.o
+           test/specbzip2-static-uClibc/crtend.o
+           test/specbzip2-static-uClibc/crti.o
+           test/specbzip2-static-uClibc/crtn.o
+           test/specbzip2-static-uClibc/decompress.o
+           test/specbzip2-static-uClibc/huffman.o
+           test/specbzip2-static-uClibc/libgcc.a
+           test/specbzip2-static-uClibc/libgcc_eh.a
+           test/specbzip2-static-uClibc/libm.a
+           test/specbzip2-static-uClibc/randtable.o
+           test/specbzip2-static-uClibc/spec.c
+           test/specbzip2-static-uClibc/spec.h
+           test/specbzip2-static-uClibc/spec.o
+           test/specbzip2-static-uClibc/specbzip2
+           test/specbzip2-static-uClibc/specbzip2.cmd
+           test/specbzip2-static-uClibc/specbzip2.collect-cmd
+           test/specbzip2-static-uClibc/specbzip2.env
+           test/specbzip2-static-uClibc/specbzip2.map
+           test/specbzip2-static-uClibc/specbzip2.repeat-cmd
+           test/specbzip2-static-uClibc/specbzip2.test-out
+           test/tiny-fini-array/Makefile
+           test/tiny-fini-array/file1.c
+           test/tiny-fini-array/file1.o
+           test/tiny-fini-array/file2.c
+           test/tiny-fini-array/file2.o
+           test/tiny-fini-array/tiny
+           test/tiny-fini-array/tiny.map
+           test/tiny-fini-array/tiny.repeat-cmd
+           test/tiny-irelative/Makefile
+           test/tiny-irelative/file1.c
+           test/tiny-irelative/file1.o
+           test/tiny-irelative/file2.c
+           test/tiny-irelative/file2.o
+           test/tiny-irelative/tiny
+           test/tiny-irelative/tiny.map
+           test/tiny-irelative/tiny.repeat-cmd
+           test/true-static-uClibc/GNUmakefile
+           test/true-static-uClibc/crt1.o
+           test/true-static-uClibc/crtbeginT.o
+           test/true-static-uClibc/crtend.o
+           test/true-static-uClibc/crti.o
+           test/true-static-uClibc/crtn.o
+           test/true-static-uClibc/libgcc.a
+           test/true-static-uClibc/true
+           test/true-static-uClibc/true.bfd
+           test/true-static-uClibc/true.c
+           test/true-static-uClibc/true.cmd
+           test/true-static-uClibc/true.collect-cmd
+           test/true-static-uClibc/true.env
+           test/true-static-uClibc/true.gold.with-relocs
+           test/true-static-uClibc/true.map
+           test/true-static-uClibc/true.o
+           test/true-static-uClibc/true.repeat-cmd
+           test/true-static-uClibc/true.test-out
+           test/true-static-uClibc/true.with-relocs
+           test/x86-relocs/test/ld
+           test/x86-relocs/test/less
+           test/x86-relocs/test/ls
+           test/x86-relocs/test/nasm
+           validation/elf/harness.sh
+Copyright: __NO_COPYRIGHT_NOR_LICENSE__
+License:   __NO_COPYRIGHT_NOR_LICENSE__
+
+Files:     papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/bzip2.c
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/bzlib.h
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/bzlib_private.h
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/crctable.c
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/decompress.c
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/huffman.c
+           papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/randtable.c
+           test/specbzip2-static-uClibc/bzip2.c
+           test/specbzip2-static-uClibc/bzlib.h
+           test/specbzip2-static-uClibc/bzlib_private.h
+           test/specbzip2-static-uClibc/crctable.c
+           test/specbzip2-static-uClibc/decompress.c
+           test/specbzip2-static-uClibc/huffman.c
+           test/specbzip2-static-uClibc/randtable.c
+Copyright: 1996-2005 Julian R Seward.
+License:   __UNKNOWN__
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ .
+ 1. Redistributions of source code must retain the above copyright
+ notice, this list of conditions and the following disclaimer.
+ .
+ 2. The origin of this software must not be misrepresented; you must
+ not claim that you wrote the original software.  If you use this
+ software in a product, an acknowledgment in the product
+ documentation would be appreciated but is not required.
+ .
+ 3. Altered source versions must be plainly marked as such, and must
+ not be misrepresented as being the original software.
+ .
+ 4. The name of the author may not be used to endorse or promote
+ products derived from this software without specific prior written
+ permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS
+ OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+ GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ Julian Seward, Cambridge, UK.
+ jseward@bzip.org
+ bzip2/libbzip2 version 1.0 of 21 March 2000
+ .
+ This program is based on (at least) the work of:
+ Mike Burrows
+ David Wheeler
+ Peter Fenwick
+ Alistair Moffat
+ Radford Neal
+ Ian H. Witten
+ Robert Sedgewick
+ Jon L. Bentley
+ .
+ For more information on these sources, see the manual.
+ --
+
+Files:     doc/ld/bfdsumm.texi
+           doc/ld/configdoc.texi
+           doc/ld/gen-doc.texi
+           doc/ld/h8-doc.texi
+           doc/ld/ld.texinfo
+           doc/ld/ldint.texinfo
+           prf/x86-64_labelled_model/labelled_x64.spec
+           reloc_proof/isa-models-2015-06-19/arm-v7/arm-run.spec
+           reloc_proof/isa-models-2015-06-19/arm-v7/arm-vfp.spec
+           reloc_proof/isa-models-2015-06-19/arm-v8/v8-base.spec
+           reloc_proof/isa-models-2015-06-19/arm-v8/v8-iset.spec
+           reloc_proof/isa-models-2015-06-19/mips/mips-base.spec
+           reloc_proof/isa-models-2015-06-19/mips/mips.spec
+           reloc_proof/isa-models-2015-06-19/x86-64/x64.spec
+Copyright: 1991-2015 Free Software Foundation, Inc.
+           Anthony Fox, University of Cambridge
+           Anthony Fox, University of Cambridge                          --
+           Anthony Fox, University of Cambridge    --
+License:   __NO_LICENSE__
+
+Files:     papers/oopsla-elf-linking-2016/artefact/prf/x86_64_model/L3.ML
+           prf/x86-64_labelled_model/L3.ML
+           prf/x86-64_model/L3.ML
+Copyright: __NO_COPYRIGHT__ in: papers/oopsla-elf-linking-2016/artefact/prf/x86_64_model/L3.ML
+           __NO_COPYRIGHT__ in: prf/x86-64_labelled_model/L3.ML
+           __NO_COPYRIGHT__ in: prf/x86-64_model/L3.ML
+License:   __UNKNOWN__
+ Importer for L3 instruction set specification language.
+ *)
+
+Files:     doc/annotated_spec/dynamic_introduction.html
+           doc/annotated_spec/relocation.html
+           doc/annotated_spec/string_table.html
+Copyright: 1997-2001 The Santa Cruz Operation, Inc.
+           2002 Caldera International.
+           2003-2010 The SCO Group.
+           2011-2014 Xinuos Inc. </small> </i>
+License:   __UNKNOWN__
+ </body></html>
+
+Files:     src/ldgram.y
+           src/ldlex.l
+Copyright: 1991-2014 Free Software Foundation, Inc.
+License:   GPL-3.0+
+ This file is part of the GNU Binutils.
+ .
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 3 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street - Fifth Floor, Boston,
+ MA 02110-1301, USA.
+ .
+ On Debian systems, the complete text of the GNU General Public License
+ Version 3 can be found in `/usr/share/common-licenses/GPL-3'.
+
+Files:     papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/blocksort.c
+           test/specbzip2-static-uClibc/blocksort.c
+Copyright: 1996-2005 Julian R Seward.
+License:   __UNKNOWN__
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ .
+ 1. Redistributions of source code must retain the above copyright
+ notice, this list of conditions and the following disclaimer.
+ .
+ 2. The origin of this software must not be misrepresented; you must
+ not claim that you wrote the original software.  If you use this
+ software in a product, an acknowledgment in the product
+ documentation would be appreciated but is not required.
+ .
+ 3. Altered source versions must be plainly marked as such, and must
+ not be misrepresented as being the original software.
+ .
+ 4. The name of the author may not be used to endorse or promote
+ products derived from this software without specific prior written
+ permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS
+ OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+ GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ Julian Seward, Cambridge, UK.
+ jseward@bzip.org
+ bzip2/libbzip2 version 1.0 of 21 March 2000
+ .
+ This program is based on (at least) the work of:
+ Mike Burrows
+ David Wheeler
+ Peter Fenwick
+ Alistair Moffat
+ Radford Neal
+ Ian H. Witten
+ Robert Sedgewick
+ Jon L. Bentley
+ .
+ For more information on these sources, see the manual.
+ .
+ To get some idea how the block sorting algorithms in this file
+ work, read my paper
+ On the Performance of BWT Sorting Algorithms
+ in Proceedings of the IEEE Data Compression Conference 2000,
+ Snowbird, Utah, USA, 27-30 March 2000.  The main sort in this
+ file implements the algorithm called  cache  in the paper.
+ --
+
+Files:     auto_generated/isabelle/Linker_script.thy
+           papers/oopsla-elf-linking-2016/artefact/prf/auto_generated/isabelle-2016/Linker_script.thy
+Copyright: 2014 Free Software Foundation, Inc.
+License:   __UNKNOWN__
+ Copying and distribution of this script, with or without modification,
+ are permitted in any medium without royalty provided the copyright
+ notice and this notice are preserved.
+
+Files:     papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/bzlib.c
+           test/specbzip2-static-uClibc/bzlib.c
+Copyright: 1996-2005 Julian R Seward.
+License:   __UNKNOWN__
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ .
+ 1. Redistributions of source code must retain the above copyright
+ notice, this list of conditions and the following disclaimer.
+ .
+ 2. The origin of this software must not be misrepresented; you must
+ not claim that you wrote the original software.  If you use this
+ software in a product, an acknowledgment in the product
+ documentation would be appreciated but is not required.
+ .
+ 3. Altered source versions must be plainly marked as such, and must
+ not be misrepresented as being the original software.
+ .
+ 4. The name of the author may not be used to endorse or promote
+ products derived from this software without specific prior written
+ permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS
+ OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+ GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ Julian Seward, Cambridge, UK.
+ jseward@bzip.org
+ bzip2/libbzip2 version 1.0 of 21 March 2000
+ .
+ This program is based on (at least) the work of:
+ Mike Burrows
+ David Wheeler
+ Peter Fenwick
+ Alistair Moffat
+ Radford Neal
+ Ian H. Witten
+ Robert Sedgewick
+ Jon L. Bentley
+ .
+ For more information on these sources, see the manual.
+ --
+ .
+ --
+ CHANGES
+ ~~~~~~~
+ 0.9.0 -- original version.
+ .
+ 0.9.0a/b -- no changes in this file.
+ .
+ 0.9.0c
+
+Files:     papers/oopsla-elf-linking-2016/artefact/prf/x86_64_model/L3_Theory.thy
+           prf/x86-64_model/L3_Theory.thy
+Copyright: __NO_COPYRIGHT__ in: papers/oopsla-elf-linking-2016/artefact/prf/x86_64_model/L3_Theory.thy
+           __NO_COPYRIGHT__ in: prf/x86-64_model/L3_Theory.thy
+License:   __UNKNOWN__
+ Definitions for L3 operations.
+ *)
+
+Files:     papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/compress.c
+           test/specbzip2-static-uClibc/compress.c
+Copyright: 1996-2005 Julian R Seward.
+License:   __UNKNOWN__
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ .
+ 1. Redistributions of source code must retain the above copyright
+ notice, this list of conditions and the following disclaimer.
+ .
+ 2. The origin of this software must not be misrepresented; you must
+ not claim that you wrote the original software.  If you use this
+ software in a product, an acknowledgment in the product
+ documentation would be appreciated but is not required.
+ .
+ 3. Altered source versions must be plainly marked as such, and must
+ not be misrepresented as being the original software.
+ .
+ 4. The name of the author may not be used to endorse or promote
+ products derived from this software without specific prior written
+ permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS
+ OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+ GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ Julian Seward, Cambridge, UK.
+ jseward@bzip.org
+ bzip2/libbzip2 version 1.0 of 21 March 2000
+ .
+ This program is based on (at least) the work of:
+ Mike Burrows
+ David Wheeler
+ Peter Fenwick
+ Alistair Moffat
+ Radford Neal
+ Ian H. Witten
+ Robert Sedgewick
+ Jon L. Bentley
+ .
+ For more information on these sources, see the manual.
+ --
+ .
+ --
+ CHANGES
+ ~~~~~~~
+ 0.9.0 -- original version.
+ .
+ 0.9.0a/b -- no changes in this file.
+ .
+ 0.9.0c
+ * changed setting of nGroups in sendMTFValues() so as to
+ do a bit better on small files
+ --
+
+Files:     papers/oopsla-elf-linking-2016/artefact/linker/lem/etc/header
+           papers/oopsla-elf-linking-2016/artefact/linker/lem/src/parser.mly
+Copyright: __NO_COPYRIGHT__ in: papers/oopsla-elf-linking-2016/artefact/linker/lem/etc/header
+           __NO_COPYRIGHT__ in: papers/oopsla-elf-linking-2016/artefact/linker/lem/src/parser.mly
+License:   BSD-3-Clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+ notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+ notice, this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ 3. The names of the authors may not be used to endorse or promote
+ products derived from this software without specific prior written
+ permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE AUTHORS ``AS IS'' AND ANY EXPRESS
+ OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+ GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
+ IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+ OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
+
+Files:     doc/ld/fdl.texi
+Copyright: __NO_COPYRIGHT__ in: doc/ld/fdl.texi
+License:   __UNKNOWN__
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+Files:     prf/x86-64_labelled_model/L3_Lib.thy
+Copyright: __NO_COPYRIGHT__ in: prf/x86-64_labelled_model/L3_Lib.thy
+License:   __UNKNOWN__
+ L3 operations.
+ *)
+
+Files:     reloc_proof/isa-models-2015-06-19/arm-v7/arm-base.spec
+Copyright: Anthony Fox, University of Cambridge                          --
+License:   __UNKNOWN__
+ Preliminaries
+ .
+ Word sizes (32-bit architecture)
+
+Files:     reloc_proof/isa-models-2015-06-19/arm-v7/arm-iset.spec
+Copyright: Anthony Fox, University of Cambridge                          --
+License:   __UNKNOWN__
+ Instruction semantics
+ .
+ ~~~~~~~~~~~~~~~~~~~
+ T,A: B<c>   <label>
+ T2:  B<c>.W <label>
+ ~~~~~~~~~~~~~~~~~~~
+
+Files:     papers/oopsla-elf-linking-2016/artefact/linker/lem/tex-lib/lem.sty
+Copyright: __NO_COPYRIGHT__ in: papers/oopsla-elf-linking-2016/artefact/linker/lem/tex-lib/lem.sty
+License:   __UNKNOWN__
+ Redistribution and use in source and binary forms, with or without    %
+ modification, are permitted provided that the following conditions    %
+ are met:                                                              %
+ 1. Redistributions of source code must retain the above copyright     %
+ notice, this list of conditions and the following disclaimer.         %
+ 2. Redistributions in binary form must reproduce the above copyright  %
+ notice, this list of conditions and the following disclaimer in the   %
+ documentation and/or other materials provided with the distribution.  %
+ 3. The names of the authors may not be used to endorse or promote     %
+ products derived from this software without specific prior written    %
+ permission.                                                           %
+ %
+ THIS SOFTWARE IS PROVIDED BY THE AUTHORS ``AS IS'' AND ANY EXPRESS    %
+ OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED     %
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE    %
+ ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY       %
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL    %
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE     %
+ GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS         %
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER  %
+ IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR       %
+ OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN   %
+ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.                         %
+
+Files:     reloc_proof/isa-models-2015-06-19/COPYRIGHT
+Copyright: 2011-2013 Anthony Fox
+License:   BSD-3-Clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are
+ met:
+ .
+ * Redistributions of source code must retain the above copyright
+ notice, this list of conditions and the following disclaimer.
+ .
+ * Redistributions in binary form must reproduce the above copyright
+ notice, this list of conditions and the following disclaimer in
+ the documentation and/or other materials provided with the
+ distribution.
+ .
+ * The names of the copyright holders and contributors may not be
+ used to endorse or promote products derived from this software
+ without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+ HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+ BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS
+ OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
+ TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+ USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+ DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD 3-clause "New" or "Revised"
+ License can be found in `/usr/share/common-licenses/BSD'.
+
+#----------------------------------------------------------------------------
+# xml and html files (skipped):
+#         doc/ld/ld/MIPS.html
+#         doc/ld/ld/Output-Section-Description.html
+#         doc/ld/ld/Simple-Assignments.html
+#         doc/ld/ld/PowerPC64-ELF64.html
+#         doc/ld/ld/Forced-Output-Alignment.html
+#         doc/ld/ld/ARM.html
+#         doc/ld/ld/Overview.html
+#         doc/ld/ld/Output-Section-Constraint.html
+#         doc/ld/ld/MEMORY.html
+#         doc/ld/ld/Bug-Reporting.html
+#         doc/ld/ld/BFD-outline.html
+#         doc/ld/ld/Symbolic-Constants.html
+#         doc/ld/ld/Simple-Commands.html
+#         doc/ld/ld/Environment.html
+#         doc/ld/ld/Xtensa.html
+#         doc/ld/ld/HPPA-ELF32.html
+#         doc/ld/ld/SECTIONS.html
+#         doc/ld/ld/Canonical-format.html
+#         doc/ld/ld/Output-Section-Discarding.html
+#         doc/ld/ld/Script-Format.html
+#         doc/ld/ld/Evaluation.html
+#         doc/ld/ld/Output-Section-Fill.html
+#         doc/ld/ld/LD-Index.html
+#         doc/ld/ld/Input-Section-Wildcards.html
+#         doc/ld/ld/PHDRS.html
+#         doc/ld/ld/M68K.html
+#         doc/ld/ld/Options.html
+#         doc/ld/ld/MRI.html
+#         doc/ld/ld/MMIX.html
+#         doc/ld/ld/Input-Section-Example.html
+#         doc/ld/ld/Bug-Criteria.html
+#         doc/ld/ld/Builtin-Functions.html
+#         doc/ld/ld/M68HC11_002f68HC12.html
+#         doc/ld/ld/Machine-Dependent.html
+#         doc/ld/ld/Location-Counter.html
+#         doc/ld/ld/Scripts.html
+#         doc/ld/ld/PROVIDE.html
+#         doc/ld/ld/PROVIDE_005fHIDDEN.html
+#         doc/ld/ld/Output-Section-Phdr.html
+#         doc/ld/ld/Output-Section-LMA.html
+#         doc/ld/ld/REGION_005fALIAS.html
+#         doc/ld/ld/Invocation.html
+#         doc/ld/ld/Expressions.html
+#         doc/ld/ld/Symbols.html
+#         doc/ld/ld/HIDDEN.html
+#         doc/ld/ld/Entry-Point.html
+#         doc/ld/ld/Input-Section.html
+#         doc/ld/ld/TI-COFF.html
+#         doc/ld/ld/SPU-ELF.html
+#         doc/ld/ld/H8_002f300.html
+#         doc/ld/ld/Assignments.html
+#         doc/ld/ld/Reporting-Bugs.html
+#         doc/ld/ld/Implicit-Linker-Scripts.html
+#         doc/ld/ld/Operators.html
+#         doc/ld/ld/i960.html
+#         doc/ld/ld/Output-Section-Keywords.html
+#         doc/ld/ld/Overlay-Description.html
+#         doc/ld/ld/PowerPC-ELF32.html
+#         doc/ld/ld/Output-Section-Address.html
+#         doc/ld/ld/NDS32.html
+#         doc/ld/ld/Output-Section-Attributes.html
+#         doc/ld/ld/Orphan-Sections.html
+#         doc/ld/ld/Nios-II.html
+#         doc/ld/ld/Basic-Script-Concepts.html
+#         doc/ld/ld/VERSION.html
+#         doc/ld/ld/Format-Commands.html
+#         doc/ld/ld/MSP430.html
+#         doc/ld/ld/WIN32.html
+#         doc/ld/ld/File-Commands.html
+#         doc/ld/ld/GNU-Free-Documentation-License.html
+#         doc/ld/ld/BFD.html
+#         doc/ld/ld/BFD-information-loss.html
+#         doc/ld/ld/Constants.html
+#         doc/ld/ld/Miscellaneous-Commands.html
+#         doc/ld/ld/Input-Section-Basics.html
+#         doc/ld/ld/Output-Section-Name.html
+#         doc/ld/ld/Source-Code-Reference.html
+#         doc/ld/ld/Output-Section-Data.html
+#         doc/ld/ld/index.html
+#         doc/ld/ld/Expression-Section.html
+#         doc/ld/ld/Forced-Input-Alignment.html
+#         doc/ld/ld/Output-Section-Region.html
+#         doc/ld/ld/Output-Section-Type.html
+#         doc/ld/ld/Input-Section-Common.html
+#         doc/ld/ld/Input-Section-Keep.html
+#         doc/ld/ld/Simple-Example.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/src/_tags
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/index.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/lem-manual.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/index_exceptions.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Backend_common.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Reporting_basic.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Typecheck_ctxt.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Reporting_basic.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/code_VALFinite_map.Fmap_map.big_union.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/code_VALFinite_map.Dmap_map.apply.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Target.Targetset.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/code_VALFinite_map.Fmap_map.remove.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/code_VALFinite_map.Fmap_map.apply.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Trans.Macros.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Precedence.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Patterns.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Initial_env.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Ast_util.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Finite_map.Dmap_map.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Reporting.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Pattern_syntax.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/index_types.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/index_methods.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Backend_common.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Types.Cdset.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/code_VALFinite_map.Dmap_map.set_default.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/code_VALFinite_map.Fmap_map.from_list.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Main.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/code_VALFinite_map.Fmap_map.map.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Util.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Def_trans.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Finite_map.Fmap_map.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Name.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/index_classes.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Finite_map.Fmap.S.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Finite_map.Dmap_map.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Precedence.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Syntactic_tests.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/index_values.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Types.TNvar.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Finite_map.Fmap.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Ident.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Typecheck_ctxt.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Macro_expander.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Target_syntax.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Main.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Types.Cdmap.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Seplist.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Finite_map.Dmap.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/code_VALFinite_map.Dmap_map.apply_opt.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Typed_ast_syntax.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Backend_common.Make.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Typed_ast.Exp_context.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/code_VALFinite_map.Fmap_map.empty.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Output.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Util.IntSet.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/code_VALFinite_map.Fmap_map.from_list2.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/index_attributes.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Typed_ast_syntax.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/code_VALFinite_map.Dmap_map.remove.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Types.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/code_VALFinite_map.Dmap_map.in_dom.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Util.StringSet.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/code_VALFinite_map.Fmap_map.union.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Trans.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/code_VALFinite_map.Fmap_map.pp_map.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Types.Pset.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Path.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Typed_ast.Exps_in_context.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Ast_util.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Coq_decidable_equality.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Trans.Macros.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Backend.Make.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Pattern_syntax.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Types.TNset.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Util.IntIntSet.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Tyvar.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Name.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/code_VALFinite_map.Fmap_map.filter.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Rename_top_level.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Finite_map.Fmap.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Types.TNfmap.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Typecheck.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Types.Constraint.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Target_binding.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Finite_map.Fmap_map.S.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Types.Cdmap.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Types.Pfmap.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/code_VALFinite_map.Dmap_map.insert.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/index_module_types.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Process_file.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Finite_map.Dmap.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Pp.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Macro_expander.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Tyvar.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Nvar.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Types.Constraint.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Util.ExtraSet.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/code_VALFinite_map.Fmap_map.insert.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Typed_ast.Exps_in_context.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Target.Targetset.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Finite_map.Fmap_map.S.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Finite_map.Fmap_map.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Initial_env.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Rename_top_level.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Module_dependencies.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/code_VALFinite_map.Fmap_map.iter.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Types.TNfmap.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/index_class_types.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/code_VALFinite_map.Fmap_map.in_dom.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Backend.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Module_dependencies.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Target_trans.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Typed_ast.NameSet.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Types.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Patterns.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Util.ExtraSet.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Types.Global_defs.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Pcombinators.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Typed_ast.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Reporting.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Typecheck.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/code_VALFinite_map.Dmap_map.insert_opt.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Types.Pset.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/code_VALFinite_map.Fmap_map.is_empty.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Target.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/code_VALFinite_map.Fmap_map.domains_disjoint.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/code_VALFinite_map.Fmap_map.domain.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/index_modules.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Output.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Typed_ast.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Path.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/code_VALFinite_map.Fmap_map.fold.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Backend.Make.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Typed_ast.Nfmap.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Finite_map.Fmap.S.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Finite_map.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Pp.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Types.Pfmap.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Target_syntax.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Coq_decidable_equality.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Target_trans.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Util.StringSet.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Trans.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Util.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Backend.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Types.TNset.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/code_VALFinite_map.Fmap_map.domains_overlap.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Syntactic_tests.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Target_binding.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Target.Targetmap.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Macro_expander.Expander.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Def_trans.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Backend_common.Make.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/index.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Types.TNvar.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Ident.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Pcombinators.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Typed_ast.Nfmap.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Seplist.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Util.IntSet.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Macro_expander.Expander.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Types.Global_defs.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Process_file.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Nvar.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Typed_ast.Exp_context.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/code_VALFinite_map.Fmap_map.merge.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Util.IntIntSet.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/code_VALFinite_map.Dmap_map.empty.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Util.Duplicate.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Target.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Finite_map.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Typed_ast.NameSet.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/type_Util.Duplicate.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Types.Cdset.html
+#         papers/oopsla-elf-linking-2016/artefact/linker/lem/doc/built-doc/html-doc/Target.Targetmap.html
+
+#----------------------------------------------------------------------------
+# huge files   (skipped):
+#         test/true-static-uClibc/libc.a
+#         test/hello-static-uClibc/libc.a
+#         test/hello-static-glibc/libgcc.a
+#         test/hello-static-glibc/libc.a
+#         test/mixed-binaries/quassel
+#         test/mixed-binaries/python3.4m
+#         test/specbzip2-static-uClibc/libc.a
+#         doc/DWARF5.pdf
+#         doc/DWARF4.pdf
+#         doc/Dwarf3.pdf
+#         doc/aadwarf64.pdf
+#         papers/oopsla-elf-linking-2016/paper-37.tar.gz
+#         papers/oopsla-elf-linking-2016/artefact/linker/test/true-static-uClibc/libc.a
+#         papers/oopsla-elf-linking-2016/artefact/linker/test/hello-static-uClibc/libc.a
+#         papers/oopsla-elf-linking-2016/artefact/linker/test/specbzip2-static-uClibc/libc.a
+
+#----------------------------------------------------------------------------
+# Files marked as NO_LICENSE_TEXT_FOUND may be covered by the following
+# license/copyright files.
+
+#----------------------------------------------------------------------------
+# License file: LICENSE
+ BSD 2-Clause License
+ .
+ Linksem, located in the src/, test/ and validation/ directories, is subject to
+ this BSD 2-Clause License. This license does not apply to files outside these
+ directories.
+ .
+ Copyright (c) 2016, Dominic Mulligan
+ Copyright (c) 2018, Stephen Kell
+ Copyright (c) 2018, Simon Ser
+ Copyright (c) 2016-2021, Peter Sewell
+ Copyright (c) 2018, Shaked Flur
+ Copyright (c) 2020, Thibaut Perami
+ Copyright (c) 2018, Robert Norton-Wright
+ Copyright (c) 2018, Ramana Kumar
+ Copyright (c) 2018, Jonathan French
+ Copyright (c) 2017, Thomas Bauereiss
+ All rights reserved.
+ .
+ This software was developed by the University of Cambridge Computer
+ Laboratory (Department of Computer Science and Technology), in part
+ funded by EPSRC Programme Grant EP/K008528/1 [REMS: Rigorous
+ Engineering for Mainstream
+ Systems](http://www.cl.cam.ac.uk/~pes20/rems), in part funded from
+ the European Research Council (ERC) under the European Union’s Horizon
+ 2020 research and innovation programme (grant agreement No 789108,
+ "ELVER"), and in part funded by Google.
+ .
+ .
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ .
+ 1. Redistributions of source code must retain the above copyright notice, this
+    list of conditions and the following disclaimer.
+ .
+ 2. Redistributions in binary form must reproduce the above copyright notice,
+    this list of conditions and the following disclaimer in the documentation
+    and/or other materials provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
